@@ -1,0 +1,62 @@
+[
+    {
+        "vehicleId": "VH1001",
+        "eventType": "Ignition On",
+        "speed": 0,
+        "location": {
+            "latitude": 37.7749,
+            "longitude": -122.4194
+        },
+        "odometer": 12345,
+        "fuelLevel": 85,
+        "batteryStatus": "Normal",
+        "tirePressure": {
+            "frontLeft": 32,
+            "frontRight": 31,
+            "rearLeft": 30,
+            "rearRight": 32
+        },
+        "timestamp": "2023-05-15T08:30:00Z"
+    },
+    {
+        "vehicleId": "VH1002",
+        "eventType": "Time Interval",
+        "speed": 45,
+        "location": {
+            "latitude": 37.7765,
+            "longitude": -122.4178
+        },
+        "engineTemp": 85,
+        "tirePressure": {
+            "frontLeft": 32,
+            "frontRight": 31,
+            "rearLeft": 30,
+            "rearRight": 32
+        },
+        "timestamp": "2023-05-15T08:35:00Z"
+    },
+    {
+        "timestamp": "2023-05-15T09:15:00Z",
+        "eventType": "Ignition Off",
+        "vehicleId": "VH1001",
+        "location": {
+            "latitude": 37.7812,
+            "longitude": -122.4111
+        },
+        "odometer": 12368,
+        "fuelLevel": 78,
+        "batteryStatus": "Normal"
+    },
+    {
+        "timestamp": "2023-05-15T10:30:00Z",
+        "eventType": "Ignition On",
+        "vehicleId": "VH1002",
+        "location": {
+            "latitude": 34.0522,
+            "longitude": -118.2437
+        },
+        "odometer": 45678,
+        "chargeLevel": 95,
+        "batteryHealth": "Excellent"
+    }
+]
