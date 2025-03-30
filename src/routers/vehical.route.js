@@ -5,11 +5,11 @@ const router = express.Router();
 
 const vehicalController = new VehicleController();
 
-// Get all events
-router.get('/vehical', vehicalController.getAllEvents);
+// Get all vehicals
+router.get('/vehicals', vehicalController.getAllEvents);
 
 // Get events by type
-router.get('/vehical/filter', vehicalController.getEventByType);
+// router.get('/vehical/filter', vehicalController.getEventByType);
 
 // Get events by time range
 // router.get('/range', );

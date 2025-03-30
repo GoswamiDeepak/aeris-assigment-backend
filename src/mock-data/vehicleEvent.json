@@ -7,6 +7,7 @@
             "latitude": 37.7749,
             "longitude": -122.4194
         },
+        "engineTemp": 0,
         "odometer": 12345,
         "fuelLevel": 85,
         "batteryStatus": "Normal",
@@ -27,6 +28,9 @@
             "longitude": -122.4178
         },
         "engineTemp": 85,
+        "odometer": 12345,
+        "fuelLevel": 60,
+        "batteryStatus": "Normal",
         "tirePressure": {
             "frontLeft": 32,
             "frontRight": 31,
@@ -36,27 +40,43 @@
         "timestamp": "2023-05-15T08:35:00Z"
     },
     {
-        "timestamp": "2023-05-15T09:15:00Z",
+        "vehicleId": "VH1003",
         "eventType": "Ignition Off",
-        "vehicleId": "VH1001",
+        "speed": 0,
         "location": {
             "latitude": 37.7812,
             "longitude": -122.4111
         },
+        "engineTemp": 20,
         "odometer": 12368,
         "fuelLevel": 78,
-        "batteryStatus": "Normal"
+        "batteryStatus": "Normal",
+        "tirePressure": {
+            "frontLeft": 32,
+            "frontRight": 31,
+            "rearLeft": 30,
+            "rearRight": 32
+        },
+        "timestamp": "2023-05-15T09:15:00Z"
     },
     {
-        "timestamp": "2023-05-15T10:30:00Z",
+        "vehicleId": "VH1004",
         "eventType": "Ignition On",
-        "vehicleId": "VH1002",
+        "speed": 0,
         "location": {
             "latitude": 34.0522,
             "longitude": -118.2437
         },
+        "engineTemp": 0,
         "odometer": 45678,
-        "chargeLevel": 95,
-        "batteryHealth": "Excellent"
+        "fuelLevel": 100,
+        "batteryStatus": "Excellent",
+        "tirePressure": {
+            "frontLeft": 32,
+            "frontRight": 31,
+            "rearLeft": 30,
+            "rearRight": 32
+        },
+        "timestamp": "2023-05-15T10:30:00Z"
     }
 ]
