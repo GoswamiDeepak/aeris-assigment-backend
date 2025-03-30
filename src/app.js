@@ -19,4 +19,10 @@ app.get('/api/health', (req, res) => {
 
 app.use('/api/v1/', vehicalrouter);
 
-export default app;
+const PORT = process.env.PORT || 8000;
+
+app.listen(PORT, () => {
+    console.log('Listening on server: ', PORT);
+});
+
+
