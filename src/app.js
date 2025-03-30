@@ -12,6 +12,11 @@ app.get('/', (req, res) => {
     res.send('Assigment backend.!');
 });
 
+// Health check endpoint for Vercel
+app.get('/api/health', (req, res) => {
+    res.status(200).json({ status: 'ok', message: 'Server is running' });
+});
+
 app.use('/api/v1/', vehicalrouter);
 
 export default app;
