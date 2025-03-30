@@ -2,14 +2,14 @@
     "name": "aeris-assignment",
     "version": "1.0.0",
     "description": "",
-    "main": "src/app.js",
+    "main": "index.js",
     "type": "module",
     "scripts": {
-        "start": "node src/app.js",
-        "dev": "nodemon src/app.js"
+        "start": "node index.js",
+        "dev": "nodemon index.js"
     },
     "keywords": [],
-    "author": "",
+    "author": "deepakgoswamiofficial@gmamil.com",
     "license": "ISC",
     "dependencies": {
         "@tailwindcss/vite": "^4.0.17",
