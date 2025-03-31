@@ -22,7 +22,7 @@
     },
     {
         "vehicleId": "VH1002",
-        "eventType": "Time Interval",
+        "eventType": "Time Interval", 
         "speed": 45,
         "location": {
             "latitude": 37.7765,

@@ -86,6 +86,7 @@ const vehicleEvents = [
         timestamp: '2023-05-15T10:30:00Z',
     },
 ];
+
 export class VehicleController {
     getAllEvents = (req, res, next) => {
         let data = vehicleEvents;
@@ -93,19 +94,19 @@ export class VehicleController {
             const { eventType, startTime, endTime, vehicleId, isActive } = req.query;
 
             if (eventType) {
-                data = vehicleEvents.filter((event) => event.eventType === eventType);
-            }
-
-            if (isActive) {
-                data = vehicleEvents.filter((event) => (isActive === 'false' ? !event.isActive : event.isActive));
+                data = data.filter((event) => event.eventType === eventType);
             }
 
             if (vehicleId) {
-                data = vehicleEvents.filter((event) => event.vehicleId === vehicleId);
+                data = data.filter((event) => event.vehicleId === vehicleId);
+            }
+
+            if (isActive) {
+                data = data.filter((event) => (isActive == 'false' ? !event.isActive : event.isActive));
             }
 
             if (startTime && endTime) {
-                data = vehicleEvents.filter((event) => {
+                data = data.filter((event) => {
                     const eventTime = new Date(event.timestamp).getTime();
                     return eventTime >= new Date(start).getTime() && eventTime <= new Date(end).getTime();
                 });
